@@ -16,6 +16,12 @@
 		9F515E852B52718800102470 /* CountDownAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F515E842B52718800102470 /* CountDownAppTests.swift */; };
 		9F515E8F2B52718800102470 /* CountDownAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F515E8E2B52718800102470 /* CountDownAppUITests.swift */; };
 		9F515E912B52718800102470 /* CountDownAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F515E902B52718800102470 /* CountDownAppUITestsLaunchTests.swift */; };
+		9F515E9E2B5273D800102470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F515E9D2B5273D800102470 /* AppDelegate.swift */; };
+		9F515EA32B52796A00102470 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F515EA22B52796A00102470 /* TimerViewModel.swift */; };
+		9F515EA52B527A4600102470 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F515EA42B527A4600102470 /* NotificationHandler.swift */; };
+		9F515EA82B52840400102470 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F515EA72B52840400102470 /* Extensions.swift */; };
+		9F515EAA2B52851300102470 /* RoundTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F515EA92B52851300102470 /* RoundTimerView.swift */; };
+		9F515EAC2B528BB200102470 /* CountDownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F515EAB2B528BB200102470 /* CountDownTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		9F515E8A2B52718800102470 /* CountDownAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountDownAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F515E8E2B52718800102470 /* CountDownAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownAppUITests.swift; sourceTree = "<group>"; };
 		9F515E902B52718800102470 /* CountDownAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9F515E9D2B5273D800102470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F515EA22B52796A00102470 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		9F515EA42B527A4600102470 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		9F515EA72B52840400102470 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9F515EA92B52851300102470 /* RoundTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTimerView.swift; sourceTree = "<group>"; };
+		9F515EAB2B528BB200102470 /* CountDownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				9F515E6E2B52718400102470 /* CountDownAppApp.swift */,
+				9F515E9D2B5273D800102470 /* AppDelegate.swift */,
 				9F515E702B52718400102470 /* ContentView.swift */,
+				9F515EA62B5283F700102470 /* Helpers */,
+				9F515E9F2B5275B100102470 /* Timer */,
 				9F515E722B52718700102470 /* Assets.xcassets */,
 				9F515E772B52718700102470 /* Persistence.swift */,
 				9F515E792B52718700102470 /* CountDownApp.xcdatamodeld */,
@@ -131,6 +146,25 @@
 				9F515E902B52718800102470 /* CountDownAppUITestsLaunchTests.swift */,
 			);
 			path = CountDownAppUITests;
+			sourceTree = "<group>";
+		};
+		9F515E9F2B5275B100102470 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				9F515EA92B52851300102470 /* RoundTimerView.swift */,
+				9F515EA22B52796A00102470 /* TimerViewModel.swift */,
+				9F515EAB2B528BB200102470 /* CountDownTimer.swift */,
+				9F515EA42B527A4600102470 /* NotificationHandler.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		9F515EA62B5283F700102470 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F515EA72B52840400102470 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +297,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F515EA32B52796A00102470 /* TimerViewModel.swift in Sources */,
+				9F515EA82B52840400102470 /* Extensions.swift in Sources */,
+				9F515EA52B527A4600102470 /* NotificationHandler.swift in Sources */,
+				9F515EAC2B528BB200102470 /* CountDownTimer.swift in Sources */,
+				9F515EAA2B52851300102470 /* RoundTimerView.swift in Sources */,
 				9F515E782B52718700102470 /* Persistence.swift in Sources */,
 				9F515E712B52718400102470 /* ContentView.swift in Sources */,
 				9F515E6F2B52718400102470 /* CountDownAppApp.swift in Sources */,
+				9F515E9E2B5273D800102470 /* AppDelegate.swift in Sources */,
 				9F515E7B2B52718700102470 /* CountDownApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,8 +471,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,8 +500,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
